@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/web/css/estilosServicios.css">
+    <title>PECKERHEALTH</title>
+</head>
+<body>
+    <%- include("templates/menu") %>
+    <article>
+        <div class="wrap">
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante card1"></div>
+                    <div class="atras">
+                        <button class="btn" style="color: white; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"  type="button" data-bs-toggle="collapse" href="#collapseMed" role="button" aria-expanded="false" aria-controls="collapseMed" >Mi médico</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante card2"></div>
+                    <div class="atras">
+                        <button class="btn" style="color: white; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"  type="button" data-bs-toggle="collapse" href="#collapseExp" role="button" aria-expanded="false" aria-controls="collapseExp" >Mi expediente</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante card3"></div>
+                    <div class="atras">
+                        <button class="btn" style="color: white; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"  type="button" data-bs-toggle="collapse" href="#collapseCon" role="button" aria-expanded="false" aria-controls="collapseCon" >Mi persona de confianza</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </article>
+    
+    <div class="accordion" id="accord">
+    <div class="collapse" id="collapseExp">
+        <div class="contForm">   
+           
+            <div class="innerForm">
+                <form action="">
+                    <p>Nombre:</p>
+                    <input type="text" id="nombre">
+                    <br>
+                    <p>Apellidos:</p>
+                    <input type="text" id="apellidos">
+                    <br>
+                    <br>
+                    <p>Género:</p>
+                    <input type="checkbox" name="Masculino" id="male"> Masculino
+                    <br>
+                    <input type="checkbox" name="Femenino" id="female"> Femenino
+                    <br>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Tipo de Sangre</option>
+                        <option value="1">A+</option>
+                        <option value="2">A-</option>
+                        <option value="3">B+</option>
+                        <option value="3">B-</option>
+                        <option value="3">AB+</option>
+                        <option value="3">AB-</option>
+                        <option value="3">O+</option>
+                        <option value="3">O-</option>
+                      </select>
+                      <br>
+                      <br>
+                      <p>Alergias:</p>
+                      <input type="text" name="Alergias" id="Alergy">
+                      <br>
+                      <br>
+                      <input type="submit" class="hollywood" value="Guardar">
+        
+                      
+                </form>
+            </div>
+           
+        </div>
+    
+        
+    </div>
+    </div>
+    
+        
+        
+    
+    
+    
+    
+    <div class="fot">
+        <footer>
+            Derechos Reservado (c) | Pecker Health. 2023 
+            
+        </footer>
+    </div>
+</body>
+</html>
